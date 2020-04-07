@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>JavaScript for Challenges</title>
+</head>
+<body>
+    <div class="container-1">
+        <h1>Challenge 1: What is your age ?</h1>
+        <div class="flex-box-container-1" >
+
+            <div>
+                <button class="btn btn-primary" onclick="age()" >Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()" >Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1" >
+            <div id="flex-box-result"></div>
+        </div>
+    </div> 
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" onclick="dogGenerator()">Generate cat</button>
+        
+        <div class="flex-box-container-2" id="dogpic">
+            <!-- <img src="https://images.dog.ceo/breeds/pekinese/n02086079_11089.jpg" alt="" width="300" height="300" >
+            <img src="https://images.dog.ceo/breeds/poodle-miniature/n02113712_243.jpg" alt=""width="300" height="300" >
+            <img src="https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_14608.jpg" alt="" width="300" height="300" >
+            <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_2738.jpg" alt="" width="300" height="300">
+            <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_2738.jpg" alt="" width="300" height="300">
+            <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_2738.jpg" alt="" width="300" height="300">
+            <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_2738.jpg" alt="" width="300" height="300"> -->
+        </div>
+    </div>
+    <div class="container-3">
+        <h2>Challenge 3: Rock Paper Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://images.unsplash.com/photo-1525857597365-5f6dbff2e36e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" height="150" width="150" onclick="rpsGame(this)">
+            <img id="paper" src="https://cdn.clipart.email/13d8154e8cacd1178202113d3322f54e_piece-of-notebook-paper-clipart_328-425.jpeg" alt="" width="150" height="150" onclick="rpsGame(this)">
+            <img id="scissor" src="https://static1.bigstockphoto.com/8/4/2/large2/248100520.jpg" alt="" width="150" height="150" onclick="rpsGame(this)">
+        </div>
+    </div>
+    <div class="container-4">
+        <h1 id="Change-my-color" >Challenge 4: Change the button color</h1>
+        <div class="flex-box-pick-color" >
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Blue!!</button>
+            <button class="btn btn-danger">Red!!</button>
+            <button class="btn btn-warning">Yellow!!</button>
+            <button class="btn btn-success">Green!!</button>
+        </div>
+    </div>  
+    <div class="container-5">
+        <h1>Challenge 5: Blackjack</h1>
+        <h1><span id="blackjack-result">Lets's play !!</span></h1>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You : <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer : <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div class="">
+                <button class="btn btn-primary" id="blackjack-hit-button">Hit</button>
+                <button class="btn btn-warning" id="blackjack-stand-button">Stand</button>
+                <button class="btn btn-danger" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table style="border : 1px solid black;">
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>    
+    <script src="static/js/home.js" ></script>
+    
+</body>
+</html>

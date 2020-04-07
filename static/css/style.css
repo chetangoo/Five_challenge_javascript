@@ -1,0 +1,72 @@
+.container-1, .container-2, .container-3, .container-4 {
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-5 {
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2{
+    background: url('https://img.freepik.com/free-photo/green-poker-background_87414-2508.jpg?size=626&ext=jpg');
+    color: #ffffff;
+}
+
+.flex-blackjack-row-1 div{
+    border: 1px solid black;
+    padding: 10px;
+    flex: 1;
+    height: 350px;
+    
+}
+
+.flex-blackjack-row-1 img{
+    height: 25%;
+    padding: 10px;
+}
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-pick-color, .flex-blackjack-row-1, 
+.flex-blackjack-row-2, .flex-blackjack-row-3{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-blackjack-row-2 button{
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 div{
+    padding: 10px;
+}
+
+.flex-blackjack-row-3 tr,td, th{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: centers;
+}
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+
+.flex-box-container-2 img {
+    width: 300;
+    height: 300;
+    box-shadow: 0 10px 50px #000000;
+    margin-bottom: 10px;
+}
+.flex-box-rps img:hover {
+    box-shadow: 0 10px 50px blue;
+}
